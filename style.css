@@ -12,9 +12,8 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .attribution {
-    position: absolute;
-    top: 700px;
-    right: 40%;
+    position: relative;
+    top: 90px;
 }
 
 body {
@@ -31,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 15%;
+    top: 13%;
 }
 
 .banniere {
@@ -86,7 +85,7 @@ img {
 
 .plan_option .price {
     position: relative;
-    top: 45px;
+    top: 55px;
     right: 90px;
 }
 
@@ -96,6 +95,11 @@ img {
     position: relative;
     top: 30px;
     right: 25px;
+    text-decoration: none;
+}
+
+.change_plan a {
+    text-decoration: none;
 }
 
 .payment {
@@ -133,5 +137,108 @@ img {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #e8edf9;
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banniere {
+        background-image: url(./images/illustration-hero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px 15px 0% 0%;
+        min-width: 300px;
+        min-height: 150px;
+        max-width: 300px;
+        max-height: 150px;
+  }
+
+  .order_summary {
+    max-width: 300px;
+    background-color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .plan_option {
+    position: relative;
+    right: 9%;
+    font-size: 1.0em;
+    background: #f2f4f7;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .plan_option .change_plan {
+    position: relative;
+    top: 0px;
+    right: 50px;
+    font-size: smaller;
+  }
+
+  .plan_option .annual_plan {
+    position: relative;
+    right: 20px;
+    padding-bottom: 30px;
+  }
+
+  .plan_option .price {
+    position: relative;
+    top: 25px;
+    right: 70px;
+}
+
+img {
+    position: relative;
+    right: 0px;
+}
+
+.payment {
+    font-family: 'RedHatDisplay-Bold', sans-serif;
+    display: inline-block;
+    position: relative;
+    padding: 15px 85px;
+    top: 56%;
+    left: -3%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #025efc;
+    ;
+}
+
+.payment a {
+    color: white;
+    text-decoration: none;
+}
+
+.cancel_order {
+    font-family: 'RedHatDisplay-Bold', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    left: 28%;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+  }
 
 
