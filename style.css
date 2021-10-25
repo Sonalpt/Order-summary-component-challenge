@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'RedHatDisplay-Medium';
+    src: url(./policies/Red_Hat_Display/static/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: "RedHatDisplay-Bold";
+    src: url(./policies/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+    position: absolute;
+    top: 700px;
+    right: 40%;
+}
+
+body {
+    background-color: #e8edf9;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    font-family: 'RedHatDisplay-Medium', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15%;
+}
+
+.banniere {
+    background-image: url(./images/illustration-hero.svg);
+    border-radius: 15px 15px 0% 0%;
+    min-width: 450px;
+    min-height: 220px;
+    max-width: 450px;
+    max-height: 220px;
+}
+
+.order_summary {
+    max-width: 450px;
+    background-color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.order_summary h3 {
+    font-family: 'RedHatDisplay-Bold', sans-serif;
+}
+
+.order_summary h3, p {
+    text-align: center;
+}
+
+.order_summary p {
+    font-size: 16px;
+    color: rgb(92, 91, 91);
+}
+
+.plan_option {
+    background: #f2f4f7;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+img {
+    position: relative;
+    right: 20px;
+}
+
+.plan_option .annual_plan {
+    position: relative;
+    right: 40px;
+    padding-top: 10px;
+}   
+
+.plan_option .price {
+    position: relative;
+    top: 45px;
+    right: 90px;
+}
+
+.plan_option .change_plan {
+    color: #3a44f7;
+    font-family: 'RedHatDisplay-Bold', sans-serif;
+    position: relative;
+    top: 30px;
+    right: 25px;
+}
+
+.payment {
+    font-family: 'RedHatDisplay-Bold', sans-serif;
+    display: inline-block;
+    position: relative;
+    padding: 15px 85px;
+    top: 56%;
+    left: 3%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #025efc;
+    ;
+}
+
+.payment a {
+    color: white;
+    text-decoration: none;
+}
+
+.cancel_order {
+    font-family: 'RedHatDisplay-Bold', sans-serif;;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    left: 35%;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.cancel_order a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+
